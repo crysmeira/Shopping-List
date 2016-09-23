@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" > 
+    <TextView
+        android:id="@+id/etListProduct"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/etListQuantity"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     
+    <TextView
+        android:id="@+id/etListPrice"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.3"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>

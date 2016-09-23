@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.shoppinglist.ShoppingListMenu"
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical" >
+
+    <EditText
+	     android:id="@+id/etSearchProduct"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:ems="5"
+	     android:hint="@string/search"
+	     android:singleLine="true"
+	     android:drawableStart="@drawable/abc_ic_search_api_holo_light"
+	     android:drawableLeft="@drawable/abc_ic_search_api_holo_light" />
+        
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	        <TextView
+		        android:id="@+id/etListProductHeader"
+		        android:layout_width="0sp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1.5"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:text="@string/product"
+		        android:textColor="#ffffff"
+		        android:background="#f48787"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		    <TextView
+		        android:id="@+id/etListQuantityHeader"
+		        android:layout_width="0sp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="0.5"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:text="@string/qty"
+		        android:textColor="#ffffff"
+		        android:background="#f48787"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		     
+		    <TextView
+		        android:id="@+id/etListSumHeader"
+		        android:layout_width="0sp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1.3"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:text="@string/price2"
+		        android:textColor="#ffffff"
+		        android:background="#f48787"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lvList2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/listproducts" >
+    </ListView>
+        
+    <LinearLayout
+        android:id="@+id/footerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	        <TextView
+		        android:id="@+id/etTitleBar"
+		        android:layout_width="0dp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1.5"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:text="@string/total_sum"
+		        android:textColor="#ffffff"
+		        android:background="#f48787"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		    <TextView
+		        android:id="@+id/etListTotalQuantity"
+		        android:layout_width="0dp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="0.5"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:background="#f48787"
+		        android:text="@string/zero"
+		        android:textColor="#ffffff"
+		        android:textAppearance="?android:attr/textAppearanceSmall" />
+		     
+			<TextView
+		        android:id="@+id/etListSum"
+		        android:layout_width="0dp"
+		        android:layout_height="fill_parent"
+		        android:layout_weight="1.3"
+		        android:gravity="center_vertical"
+		        android:padding="10dp"
+		        android:background="#f48787"
+		        android:textColor="#ffffff"
+		        android:text="@string/price_zero"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:maxLines="1"
+		        android:singleLine="true" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    
+
