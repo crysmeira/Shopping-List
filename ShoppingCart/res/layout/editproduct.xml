@@ -1,0 +1,113 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >       
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	    		<TextView
+			        android:id="@+id/tvEditProduct"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/product_name" />
+			
+			    <EditText
+			        android:id="@+id/etEditProduct"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/product_name2"
+			        android:ems="10" >
+			
+			        <requestFocus />
+			    </EditText>
+	   </LinearLayout>
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+                <TextView
+			        android:id="@+id/tvEditQuantity"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/quantity" />
+			
+			    <EditText
+			        android:id="@+id/etEditQuantity"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="number"
+			        android:ems="10" />
+       </LinearLayout>
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+                <TextView
+			        android:id="@+id/tvEditPrice"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/price" />
+			
+			    <EditText
+			        android:id="@+id/etEditPrice"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:inputType="numberDecimal"
+			        android:hint="@string/price_0_00"
+			        android:ems="10" />
+    	</LinearLayout>
+    	<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        	<TextView
+			        android:id="@+id/tvEditTotal"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/total_cost"
+			        android:padding="10dp"
+			        android:textColor="#ffffff"
+			        android:background="#f48787"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+			
+			    <TextView
+			        android:id="@+id/etEditTotal"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:ems="10"
+			        android:text="@string/price_0_00"
+			        android:padding="10dp"
+			        android:textColor="#ffffff"
+			        android:background="#f48787"
+			        android:textAppearance="?android:attr/textAppearanceSmall">
+			    </TextView>
+	        
+    	</LinearLayout>
+    </LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+	    <Button
+	        android:id="@+id/btDeleteProduct"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal|center"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:text="@string/delete"
+	        android:textColor="@color/white" />
+	</LinearLayout>
+	
+</LinearLayout>

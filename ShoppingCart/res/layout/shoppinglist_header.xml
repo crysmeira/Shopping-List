@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.shoppinglist.ShoppingListMenu"
+    tools:ignore="MergeRootFrame" >
+
+       <TextView
+        android:id="@+id/etListHeader"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.8"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/list_name2"
+        android:textColor="#ffffff"
+        android:background="#f48787"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/etQtyProductsHeader"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.6"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/items"
+        android:textColor="#ffffff"
+        android:background="#f48787"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     
+    <TextView
+        android:id="@+id/etTotalProductsHeader"
+        android:layout_width="0sp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.2"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/estimated_price"
+        android:textColor="#ffffff"
+        android:background="#f48787"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>
+
+    
+
